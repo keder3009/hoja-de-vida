@@ -1,0 +1,175 @@
+/*--General--*/
+body {
+  background:#ccc;
+}
+/*--header--*/
+header {
+  margin: auto;
+  width:40%;
+  background:blue;
+  border-radius:20px;
+  box-shadow:0px 3px 5px black;
+}
+
+header #subheader h1 {
+  color:white;
+  text-align:center;
+  font-size:50px;
+  padding:10px 0px
+}
+
+/*--img--*/
+section .img {
+  display:block;
+  margin:auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  padding:20px 0px;
+}
+
+/*--informacion general--*/
+.general {
+  margin: auto;
+  width:40%;
+  background:blue;
+  color: white;
+  text-align:center;
+  font-size:30px;
+  box-shadow:0px 3px 5px black;
+  border-radius:20px;
+}
+
+/*--box--*/
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.box:last-child {
+  margin-bottom: 30px;
+}
+
+.box__item {
+  font-size: 20px;
+  text-align: center;
+  flex-basis: 30%;
+  border-bottom: solid 1px black;
+}
+
+.box__item:nth-child(1n+2) {
+  margin-right: 20px;
+}
+
+.box__item strong {
+  color: #9A9898; 
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 424px) {
+  header, .general {
+  width:100%;
+  }
+  
+  .box {
+    flex-direction: column;
+  }
+
+  .box__item {
+    flex-basis: 70%;
+  }
+
+  .box__item:nth-child(1n+2) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 599px) {
+
+  
+  header, .general {
+  width:100%;
+  }
+  
+  .box__item {
+    flex-basis: 35%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  
+  .box__item {
+    flex-basis: 25%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  flex-shrink: 2;
+  transition: all .3s;
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+
+}
+
+
+.box__item:hover{
+  background: green;
+
+@keyframes color{
+  0%{
+    color: yellow;
+  }
+   25%{
+    color: white;
+  }
+  50%{
+    color: blue;
+  }
+
+
+--Para las tabletas--
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.box:last-child {
+  margin-bottom: 30px;
+}
+
+.box__item {
+  text-align: center;
+  flex-basis: 15%;
+  border-bottom: solid 1px black;*/
